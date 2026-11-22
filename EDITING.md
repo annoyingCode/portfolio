@@ -81,6 +81,26 @@ If the browser shows a red error screen after you save:
 
 ---
 
+## 4½. Save points and undo (git)
+
+This folder uses **git**, which keeps save points of your site. Each save point is
+called a **commit**. You can always go back to the last one, so experiments are safe.
+
+All of this works in VS Code's **Source Control** panel, the branch-shaped icon in the
+left sidebar (or press **Ctrl+Shift+G**):
+
+- **See what you changed:** every file you edited since the last save point is listed
+  there. Click a file to see the old and new versions side by side.
+- **Undo the changes to one file:** hover over the file and click the curved-arrow
+  icon (**Discard Changes**).
+- **Make a save point:** when the site looks right, type a short note in the box at
+  the top (e.g. "Updated bio") and click **Commit**. If VS Code asks whether to stage
+  all changes, choose **Yes**.
+
+A good habit: make a save point every time you finish a change you're happy with.
+
+---
+
 ## 5. Common tasks
 
 ### Add a project
