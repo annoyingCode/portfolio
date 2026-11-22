@@ -36,6 +36,12 @@
   --success: #6ee7b7;
   --string: #fcd34d;
   --grid: rgb(255 255 255 / 0.035);
+  /* skill-group colors for the skill space map */
+  --g0: #60a5fa;
+  --g1: #a78bfa;
+  --g2: #34d399;
+  --g3: #fbbf24;
+  --g4: #f472b6;
   color-scheme: dark;
 }
 
@@ -52,6 +58,11 @@
   --success: #047857;
   --string: #b45309;
   --grid: rgb(15 23 42 / 0.05);
+  --g0: #2563eb;
+  --g1: #7c3aed;
+  --g2: #059669;
+  --g3: #d97706;
+  --g4: #db2777;
   color-scheme: light;
 }
 
@@ -68,15 +79,6 @@ body {
 
 ::selection {
   background: color-mix(in oklab, var(--accent) 35%, transparent);
-}
-
-/* Faint engineering-paper grid behind the page */
-.bg-grid {
-  background-image:
-    linear-gradient(to right, var(--grid) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
 }
 
 .text-gradient {

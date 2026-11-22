@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 import SocialLinks from "./SocialLinks";
 import Reveal from "./Reveal";
 
-export default function Contact({ index = "05" }: { index?: string }) {
+export default function Contact({ index }: { index: number }) {
   return (
     <section id="contact" className="scroll-mt-20 border-t border-line">
       <div className="mx-auto max-w-6xl px-5 py-24">
@@ -15,7 +15,7 @@ export default function Contact({ index = "05" }: { index?: string }) {
           />
           <div className="relative">
             <div className="flex justify-center">
-              <SectionHeading index={index} label="contact" title="Let's build something" />
+              <SectionHeading index={index} name="contact" title="Let's build something" />
             </div>
             <p className="mx-auto -mt-4 max-w-xl text-muted">
               I&apos;m open to research collaborations, teaching roles, and AI and software

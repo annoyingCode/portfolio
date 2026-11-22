@@ -1,20 +1,27 @@
 import Reveal from "./Reveal";
 
+/**
+ * Section title with a tensor-style label, e.g.
+ *   portfolio[3] · skills.shape = (23, 9)
+ */
 export default function SectionHeading({
   index,
-  label,
+  name,
+  shape,
   title,
   subtitle,
 }: {
-  index: string;
-  label: string;
+  index: number;
+  name: string;
+  shape?: string;
   title: string;
   subtitle?: string;
 }) {
   return (
     <Reveal className="mb-10">
-      <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
-        {index} <span className="text-muted">//</span> {label}
+      <p className="font-mono text-xs tracking-wide text-accent">
+        portfolio[{index}] <span className="text-muted">·</span> {name}
+        {shape && <span className="text-muted">.shape = {shape}</span>}
       </p>
       <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">{title}</h2>
       {subtitle && <p className="mt-3 max-w-2xl text-muted">{subtitle}</p>}

@@ -34,6 +34,7 @@ files. You change the text, save, and the site updates.
 | About text and the four stat boxes | `src/data/site.ts` → `about` |
 | Work experience, education, certifications | `src/data/site.ts` → `experience`, `education`, `certifications` |
 | Skills | `src/data/site.ts` → `skills` |
+| Skill vectors for the "Skill space" map | `src/data/skillSpace.ts` (see below) |
 | Projects | `src/data/projects.ts` |
 | Blog posts | `content/blog/` (one `.md` file per post) |
 | Resume PDF | put it at `public/resume.pdf`, then set `resumeUrl: "/resume.pdf"` in `site.ts` |
@@ -151,6 +152,20 @@ In `src/data/site.ts`, fill in the links. Any link left as `""` hides its icon.
 ```ts
 github: "https://github.com/annoyingCode",
 ```
+
+### Add a skill to the Skill space map
+
+1. Add the skill name to a group in `skills` in `src/data/site.ts`.
+2. In `src/data/skillSpace.ts`, add a line with **exactly the same name** and 9 scores
+   from 0 to 1, one per axis (code, web, ML, vision, language, research, data, systems,
+   teaching):
+
+   ```ts
+   PyTorch: [0.8, 0.0, 1.0, 0.6, 0.5, 0.6, 0.4, 0.3, 0.2],
+   ```
+
+The map, the nearest neighbours and the `skills.shape` label all update by themselves.
+A skill without a vector still appears in the list under the map, just not as a dot.
 
 ### Hide the "Open to new opportunities" badge
 

@@ -9,13 +9,14 @@ const statusStyle: Record<ProjectStatus, { label: string; dot: string }> = {
   live: { label: "Live", dot: "bg-emerald-400" },
 };
 
-export default function Projects() {
+export default function Projects({ index }: { index: number }) {
   return (
     <section id="projects" className="scroll-mt-20 border-t border-line">
       <div className="mx-auto max-w-6xl px-5 py-24">
         <SectionHeading
-          index="02"
-          label="projects"
+          index={index}
+          name="projects"
+          shape={`(${projects.length},)`}
           title="What I'm building"
           subtitle="Projects I'm working on right now. Each one goes live here, with its code on GitHub, as it ships."
         />

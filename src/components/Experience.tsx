@@ -1,13 +1,18 @@
 import { Award, GraduationCap, Trophy } from "lucide-react";
-import { awards, certifications, education, experience, skills } from "@/data/site";
+import { awards, certifications, education, experience } from "@/data/site";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
-export default function Experience() {
+export default function Experience({ index }: { index: number }) {
   return (
     <section id="experience" className="scroll-mt-20 border-t border-line">
       <div className="mx-auto max-w-6xl px-5 py-24">
-        <SectionHeading index="03" label="experience" title="Experience & skills" />
+        <SectionHeading
+          index={index}
+          name="experience"
+          shape={`(${experience.length},)`}
+          title="Experience & education"
+        />
 
         <div className="grid gap-14 lg:grid-cols-[1.4fr_1fr]">
           <div className="space-y-14">
@@ -56,28 +61,6 @@ export default function Experience() {
           </div>
 
           <Reveal delay={120} className="space-y-8">
-            {/* Skills */}
-            <div className="rounded-xl border border-line bg-surface p-6">
-              <h3 className="font-mono text-sm text-fg">skills.json</h3>
-              <div className="mt-5 space-y-5">
-                {skills.map((g) => (
-                  <div key={g.group}>
-                    <p className="text-xs uppercase tracking-wider text-muted">{g.group}</p>
-                    <ul className="mt-2 flex flex-wrap gap-1.5">
-                      {g.items.map((s) => (
-                        <li
-                          key={s}
-                          className="rounded-md border border-line bg-surface-2 px-2.5 py-1 text-xs text-fg/90"
-                        >
-                          {s}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
-
             {/* Education */}
             <div className="rounded-xl border border-line bg-surface p-6">
               <h3 className="flex items-center gap-2 text-sm font-semibold">

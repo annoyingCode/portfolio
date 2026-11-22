@@ -2,11 +2,11 @@ import { about, profile } from "@/data/site";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
-export default function About() {
+export default function About({ index }: { index: number }) {
   return (
     <section id="about" className="scroll-mt-20 border-t border-line">
       <div className="mx-auto max-w-6xl px-5 py-24">
-        <SectionHeading index="01" label="about" title="A bit about me" />
+        <SectionHeading index={index} name="about" shape={`(${about.paragraphs.length},)`} title="A bit about me" />
 
         <Reveal className="grid gap-12 lg:grid-cols-[auto_1fr]">
           <div className="flex justify-center lg:block">
