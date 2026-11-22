@@ -8,12 +8,12 @@ export const profile = {
   initials: "AWK",
   role: "AI Graduate Student & Educator",
   // Titles the hero cycles through with a typing effect (first one shows by default).
-  roles: ["Software Engineer", "Educator", "Aspiring Scientist"],
+  roles: ["Software Engineer", "Educator", "Aspiring Scientist", "Obsessed with Vectors"],
   headline:
     "MS AI student and Lab Instructor at FAST NUCES, researching computer vision, reinforcement learning and model quantization.",
   bio: "MS student in Artificial Intelligence and Lab Instructor at FAST NUCES Islamabad, with research interests in computer vision, reinforcement learning and model quantization.",
   location: "Islamabad, Pakistan",
-  openToWork: true,
+  openToWork: false,
   email: "abdulwahab.ai.engr@gmail.com",
   // Put your resume at public/resume.pdf, then set this to "/resume.pdf".
   // Leave it "" to hide the Resume buttons.
