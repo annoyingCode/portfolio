@@ -23,7 +23,7 @@ export const profile = {
 
 // Leave a link empty ("") to hide its icon. Fill these in when ready.
 export const socials = {
-  github: "",
+  github: "https://github.com/annoyingCode",
   linkedin: "",
   x: "",
   huggingface: "",
@@ -79,8 +79,9 @@ export const education = [
 export const certifications = [
   "Machine Learning Specialization",
   "Deep Learning Specialization",
-  "Natural Language Specialization",
+  "Natural Language Processing Specialization",
   "Mathematics for Machine Learning and Data Science Specialization",
+  "MLOps Specialization",
 ];
 
 export const skills: { group: string; items: string[] }[] = [
@@ -107,5 +108,5 @@ export const site = {
   title: `${profile.name} — ${profile.role}`,
   description: profile.headline,
   // The live address of the site (used for link previews when you share it).
-  url: "https://portfolio-sigma-gules-63.vercel.app",
+  url: "https://awkhan.vercel.app",
 };
