@@ -1,22 +1,23 @@
 // ─────────────────────────────────────────────────────────────
-//  All portfolio content lives here. Replace the placeholders
-//  with your own details — every section reads from this file.
+//  All portfolio content lives here. Every section of the site
+//  reads from this file. See EDITING.md for how to change it.
 // ─────────────────────────────────────────────────────────────
 
 export const profile = {
   name: "Abdul Wahab Khan",
   initials: "AWK",
-  role: "Software Engineer & Educator",
+  role: "AI Graduate Student & Educator",
   // Titles the hero cycles through with a typing effect (first one shows by default).
   roles: ["Software Engineer", "Educator", "Aspiring Scientist"],
-  headline: "I build software, teach what I learn, and I'm working toward a life in science.",
-  bio: "Software engineer and educator from Islamabad, building practical software, helping others learn to do the same, and working toward a career in scientific research.",
+  headline:
+    "MS AI student and Lab Instructor at FAST NUCES, researching computer vision, reinforcement learning and model quantization.",
+  bio: "MS student in Artificial Intelligence and Lab Instructor at FAST NUCES Islamabad, with research interests in computer vision, reinforcement learning and model quantization.",
   location: "Islamabad, Pakistan",
   openToWork: true,
   email: "abdulwahab.ai.engr@gmail.com",
   // Put your resume at public/resume.pdf, then set this to "/resume.pdf".
   // Leave it "" to hide the Resume buttons.
-  resumeUrl: "",
+  resumeUrl: "/resume.pdf",
   // Optional: put a photo at /public/avatar.jpg and set this to "/avatar.jpg".
   avatar: "" as string,
 };
@@ -31,18 +32,23 @@ export const socials = {
 
 export const about = {
   paragraphs: [
-    "I'm a software engineer and educator based in Islamabad, Pakistan. I enjoy building practical software, and just as much, helping others understand how it works. Teaching has made me a clearer thinker and a better engineer: if I can't explain something simply, I don't understand it well enough yet.",
-    "My long-term goal is to become a scientist. I'm drawn to the questions behind the code, especially in artificial intelligence, and I'm working toward research that expands what's possible, not just what's shippable. This site is where I share what I build, what I teach, and what I'm learning along the way.",
+    "I'm an MS student in Artificial Intelligence and a Lab Instructor at FAST NUCES Islamabad. My research interests are computer vision, reinforcement learning and model quantization. Most recently I've been exploring how quantizing image classifiers changes what their Grad-CAM explanations show.",
+    "Teaching is the other half of what I do. I've been a Section Leader for Stanford's Code in Place in two cohorts, a Machine Learning Teaching Assistant, and I now run lab sessions and mentor students at FAST. Explaining ideas clearly makes me a better engineer, and my long-term goal is to become a scientist who does both: research and teaching.",
   ],
-  // Up to four stat boxes, e.g. { value: "200+", label: "Students taught" }.
-  // Leave the list empty [] to hide the boxes.
-  highlights: [] as { value: string; label: string }[],
+  // Up to four stat boxes. Leave the list empty [] to hide them.
+  highlights: [
+    { value: "3.82", label: "BS CGPA" },
+    { value: "Top 3", label: "BS class, 6 semesters" },
+    { value: "1st", label: "3MT pitch, GIKI 2025" },
+    { value: "2", label: "Code in Place cohorts led" },
+  ] as { value: string; label: string }[],
 };
 
 // Projects live in src/data/projects.ts
 
 export type Job = {
   role: string;
+  /** Leave "" if there's no organization to show */
   company: string;
   period: string;
   location?: string;
@@ -51,56 +57,93 @@ export type Job = {
 
 export const experience: Job[] = [
   {
-    role: "Computer Science Instructor",
+    role: "Lab Instructor",
     company: "FAST NUCES",
-    period: "2025 — Present",
+    period: "Jan 2025 — Present",
     location: "Islamabad",
     points: [
-      "Guide students through practical lab sessions",
-      "Design state-of-the-art problem sets",
-      "Teach ethical and responsible use of AI",
+      "Conduct lab sessions and mentor students through hands-on coursework",
+      "Evaluate lab tasks, exams, presentations and course projects, giving each student feedback on their work",
+      "Design problem sets and teach the ethical, responsible use of AI",
+    ],
+  },
+  {
+    role: "Section Leader",
+    company: "Code in Place, Stanford Engineering",
+    period: "June 2024 · April 2026",
+    location: "Remote",
+    points: [
+      "Taught Python to small sections of 7–8 international students in each of two cohorts",
+      "Strengthened my teaching practice through Stanford's section-leader workshops",
+    ],
+  },
+  {
+    role: "Machine Learning Teaching Assistant",
+    company: "",
+    period: "Sep 2023 — Dec 2024",
+    points: [
+      "Guided students through ML concepts, delivered reinforcement lectures and conducted lab sessions",
     ],
   },
 ];
 
 export const education = [
   {
-    degree: "M.S. in Artificial Intelligence",
+    degree: "MS in Artificial Intelligence",
     school: "FAST NUCES Islamabad",
-    period: "2025 - Present",
+    period: "Aug 2025 — Expected 2027",
+    note: "CGPA 3.7 / 4.0",
   },
   {
-    degree: "B.S. in Software Engineering",
-    school: "BUITEMS",
-    period: "2020 - 2024",
+    degree: "BS in Software Engineering",
+    school: "BUITEMS, Quetta",
+    period: "Nov 2020 — July 2024",
+    note: "CGPA 3.82 / 4.0",
   },
 ];
 
 export const certifications = [
-  "Machine Learning Specialization",
   "Deep Learning Specialization",
+  "Machine Learning Specialization",
   "Natural Language Processing Specialization",
   "Mathematics for Machine Learning and Data Science Specialization",
   "MLOps Specialization",
 ];
 
+export const awards = [
+  {
+    title: "3MT Winner, GIKI Emerging Tech & Freelance Innovation",
+    period: "Mar 2025",
+    detail: "First place in a 3-minute pitch competition for an AI-powered solution in education.",
+  },
+  {
+    title: "Senior Design Project Prize, Pakistan Engineering Council",
+    period: "Sep 2024",
+    detail: "PKR 100,000 award for my final year project, a face recognition system for access control.",
+  },
+  {
+    title: "Merit Scholarship, BUITEMS",
+    period: "2021 — 2024",
+    detail: "Tuition fee waiver for ranking in the top 3 students for 6 semesters.",
+  },
+  {
+    title: "Balochistan Education Endowment Fund Scholarship",
+    period: "2018 — 2023",
+    detail: "Annual scholarship for academic performance, five years in a row.",
+  },
+];
+
 export const skills: { group: string; items: string[] }[] = [
-  { group: "Languages", items: ["Python", "SQL", "C++", "JavaScript"] },
+  { group: "Languages", items: ["Python", "C/C++", "Java", "JavaScript", "HTML/CSS"] },
   {
-    group: "ML / Deep Learning",
-    items: ["PyTorch", "TensorFlow", "scikit-learn", "Hugging Face"],
+    group: "AI & Research",
+    items: ["Deep Learning", "Computer Vision", "NLP", "Model Quantization", "Explainable AI (Grad-CAM)"],
   },
+  { group: "Data", items: ["MySQL", "PostgreSQL", "Vector Databases"] },
+  { group: "Tools", items: ["Docker", "Linux", "Git & GitHub", "LaTeX"] },
   {
-    group: "LLMs & Agents",
-    items: ["RAG", "Fine-tuning", "LangChain", "LlamaIndex", "Prompt eval"],
-  },
-  {
-    group: "Data & MLOps",
-    items: ["Airflow", "MLflow", "Docker", "Kubernetes", "Weights & Biases"],
-  },
-  {
-    group: "Cloud & Infra",
-    items: ["FastAPI", "Postgres / pgvector"],
+    group: "Teaching & Mentoring",
+    items: ["Lab instruction", "Assessment & feedback", "Interactive engagement", "Mentoring"],
   },
 ];
 

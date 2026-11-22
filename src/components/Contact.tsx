@@ -18,8 +18,8 @@ export default function Contact({ index = "05" }: { index?: string }) {
               <SectionHeading index={index} label="contact" title="Let's build something" />
             </div>
             <p className="mx-auto -mt-4 max-w-xl text-muted">
-              I&apos;m open to full-time roles, consulting, and interesting collaborations in AI. The
-              fastest way to reach me is email.
+              I&apos;m open to research collaborations, teaching roles, and AI and software
+              engineering opportunities. The fastest way to reach me is email.
             </p>
             <a
               href={`mailto:${profile.email}`}

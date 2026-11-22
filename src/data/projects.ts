@@ -23,6 +23,15 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Quantization & Model Explainability",
+    description:
+      "Research exploring how quantization changes the Grad-CAM explanations of ResNet, GoogLeNet and MobileNet classifiers on the BloodMNIST medical imaging dataset. Does a smaller, faster model still look at the right things?",
+    status: "building",
+    tags: ["Research", "Computer Vision", "Quantization", "Explainable AI", "Medical Imaging"],
+    github: "",
+    demo: "",
+  },
+  {
     title: "AI Study Companion",
     description:
       "Upload lecture notes or slides and get practice quizzes, flashcards and explanations, with every answer linked back to the source material. Built for my own students.",

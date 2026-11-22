@@ -19,7 +19,7 @@ export default function Projects() {
           title="What I'm building"
           subtitle="Projects I'm working on right now. Each one goes live here, with its code on GitHub, as it ships."
         />
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, i) => {
             const s = statusStyle[p.status];
             return (
