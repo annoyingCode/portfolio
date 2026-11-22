@@ -13,7 +13,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: { default: site.title, template: `%s · ${site.title}` },
   description: site.description,
-  openGraph: { title: site.title, description: site.description, type: "website" },
+  alternates: { canonical: "/" },
+  openGraph: { title: site.title, description: site.description, type: "website", url: site.url },
+  twitter: { card: "summary_large_image", title: site.title, description: site.description },
 };
 
 // Runs before paint: applies the saved theme (dark by default) and marks JS as available
