@@ -53,32 +53,14 @@ export type Job = {
 
 export const experience: Job[] = [
   {
-    role: "Machine Learning Engineer",
-    company: "Company Name",
-    period: "2024 — Present",
-    location: "Remote",
+    role: "Computer Science Instructor",
+    company: "FAST NUCES",
+    period: "2025 — Present",
+    location: "Islamabad",
     points: [
-      "Led development of an LLM-powered support assistant handling 10k+ queries per week.",
-      "Built an offline/online evaluation pipeline that cut regressions reaching production by 60%.",
-      "Reduced inference cost 35% through caching, batching, and model routing.",
-    ],
-  },
-  {
-    role: "Data Scientist",
-    company: "Previous Company",
-    period: "2022 — 2024",
-    location: "City, Country",
-    points: [
-      "Shipped forecasting and classification models used across three business units.",
-      "Designed feature pipelines in Airflow and introduced MLflow for experiment tracking.",
-    ],
-  },
-  {
-    role: "AI Research Intern",
-    company: "University Lab / Startup",
-    period: "2021 — 2022",
-    points: [
-      "Researched efficient transformer variants; co-authored a workshop paper.",
+      "Guide students through practical lab sessions",
+      "Design state-of-the-art problem sets",
+      "Teach ethical and responsible use of AI",
     ],
   },
 ];
@@ -97,8 +79,10 @@ export const education = [
 ];
 
 export const certifications = [
-  "Certification Name — Issuer",
-  "Another Certification — Issuer",
+  "Machine Learning Specialization",
+  "Deep Learning Specialization",
+  "Natural Language Specialization",
+  "Mathematics for Machine Learnind and Data Science Specialization",
 ];
 
 export const skills: { group: string; items: string[] }[] = [
