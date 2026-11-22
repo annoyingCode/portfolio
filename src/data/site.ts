@@ -73,16 +73,17 @@ export const experience: Job[] = [
     period: "June 2024 · April 2026",
     location: "Remote",
     points: [
-      "Taught Python to small sections of 7–8 international students in each of two cohorts",
+      "Taught Python to small sections of 7-8 international students in each of two cohorts",
       "Strengthened my teaching practice through Stanford's section-leader workshops",
     ],
   },
   {
     role: "Machine Learning Teaching Assistant",
-    company: "",
+    company: "BUITEMS",
     period: "Sep 2023 — Dec 2024",
+    location: "Quetta, Pakistan",
     points: [
-      "Guided students through ML concepts, delivered reinforcement lectures and conducted lab sessions",
+      "Guided students through ML concepts, delivered lectures and conducted lab sessions",
     ],
   },
 ];
@@ -137,7 +138,7 @@ export const skills: { group: string; items: string[] }[] = [
   { group: "Languages", items: ["Python", "C/C++", "Java", "JavaScript", "HTML/CSS"] },
   {
     group: "AI & Research",
-    items: ["Deep Learning", "Computer Vision", "NLP", "Model Quantization", "Explainable AI (Grad-CAM)"],
+    items: ["Deep Learning", "Computer Vision", "NLP", "Model Quantization", "Explainable AI", "Representation Learning", "Multi-Task/Meta-Learning"],
   },
   { group: "Data", items: ["MySQL", "PostgreSQL", "Vector Databases"] },
   { group: "Tools", items: ["Docker", "Linux", "Git & GitHub", "LaTeX"] },
