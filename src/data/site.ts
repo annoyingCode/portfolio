@@ -106,5 +106,6 @@ export const skills: { group: string; items: string[] }[] = [
 export const site = {
   title: `${profile.name} — ${profile.role}`,
   description: profile.headline,
-  url: "https://your-domain.com",
+  // The live address of the site (used for link previews when you share it).
+  url: "https://portfolio-sigma-gules-63.vercel.app",
 };
