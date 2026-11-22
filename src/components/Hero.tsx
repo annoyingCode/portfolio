@@ -46,12 +46,21 @@ export default function Hero() {
               View projects
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
             </a>
-            <a
-              href={profile.resumeUrl}
-              className="inline-flex items-center gap-2 rounded-md border border-line bg-surface px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent/50"
-            >
-              <Download size={16} /> Resume
-            </a>
+            {profile.resumeUrl ? (
+              <a
+                href={profile.resumeUrl}
+                className="inline-flex items-center gap-2 rounded-md border border-line bg-surface px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent/50"
+              >
+                <Download size={16} /> Resume
+              </a>
+            ) : (
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 rounded-md border border-line bg-surface px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent/50"
+              >
+                Get in touch
+              </a>
+            )}
           </div>
 
           <div className="mt-6 -ml-2">

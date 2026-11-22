@@ -31,6 +31,7 @@ export default function About() {
               ))}
             </div>
 
+            {about.highlights.length > 0 && (
             <dl className="mt-10 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-4">
               {about.highlights.map((h) => (
                 <div key={h.label} className="bg-surface p-5">
@@ -39,6 +40,7 @@ export default function About() {
                 </div>
               ))}
             </dl>
+            )}
           </div>
         </Reveal>
       </div>

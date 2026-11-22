@@ -36,7 +36,7 @@ files. You change the text, save, and the site updates.
 | Skills | `src/data/site.ts` → `skills` |
 | Projects | `src/data/projects.ts` |
 | Blog posts | `content/blog/` (one `.md` file per post) |
-| Resume PDF | put it at `public/resume.pdf` |
+| Resume PDF | put it at `public/resume.pdf`, then set `resumeUrl: "/resume.pdf"` in `site.ts` |
 | Profile photo | put it at `public/avatar.jpg`, then set `avatar: "/avatar.jpg"` in `site.ts` |
 | Colors | `src/app/globals.css` (see section 6) |
 | Section titles and fixed sentences (like the Contact text) | `src/components/` (see section 7) |
@@ -140,7 +140,9 @@ Write your post here. **Bold**, *italic*, [links](https://example.com),
 lists and code blocks all work.
 ```
 
-To remove a post, delete its file. The three posts there now are samples.
+To remove a post, delete its file. The **Blog** link in the menu and the blog section on
+the home page appear automatically once there is at least one post, and hide again when
+there are none.
 
 ### Add your social links
 
@@ -185,11 +187,11 @@ the words, and leave the `<...>` tags and `{...}` around them as they are.
 
 ---
 
-## Still placeholder
+## Hidden until you add them
 
-These still contain sample content to replace:
+These parts of the site stay hidden until you fill them in:
 
-- `about.highlights` (the four stat boxes)
-- `experience`, `education`, `certifications` and `skills`
-- the sample blog posts in `content/blog/`
-- `public/resume.pdf` (doesn't exist yet, so the Resume buttons don't work)
+- **Stat boxes** under the About text: add items to `about.highlights` in `site.ts`.
+- **Resume buttons:** add `public/resume.pdf` and set `resumeUrl: "/resume.pdf"`.
+- **Blog:** add a post to `content/blog/`.
+- **Social icons:** fill in the links in `socials`.

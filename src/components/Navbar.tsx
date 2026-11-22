@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 import { profile } from "@/data/site";
 import ThemeToggle from "./ThemeToggle";
 
-const links = [
+const allLinks = [
   { href: "/#about", label: "About" },
   { href: "/#projects", label: "Projects" },
   { href: "/#experience", label: "Experience" },
@@ -14,7 +14,8 @@ const links = [
   { href: "/#contact", label: "Contact" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ showBlog }: { showBlog: boolean }) {
+  const links = showBlog ? allLinks : allLinks.filter((l) => l.href !== "/blog");
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -53,14 +54,16 @@ export default function Navbar() {
           <li className="ml-1">
             <ThemeToggle />
           </li>
-          <li className="ml-1">
-            <a
-              href={profile.resumeUrl}
-              className="rounded-md border border-accent/40 px-3 py-1.5 font-mono text-xs text-accent transition-colors hover:bg-accent/10"
-            >
-              resume.pdf
-            </a>
-          </li>
+          {profile.resumeUrl && (
+            <li className="ml-1">
+              <a
+                href={profile.resumeUrl}
+                className="rounded-md border border-accent/40 px-3 py-1.5 font-mono text-xs text-accent transition-colors hover:bg-accent/10"
+              >
+                resume.pdf
+              </a>
+            </li>
+          )}
         </ul>
 
         <div className="flex items-center gap-1 md:hidden">
@@ -89,11 +92,13 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-          <li>
-            <a href={profile.resumeUrl} className="block px-3 py-2 font-mono text-sm text-accent">
-              resume.pdf
-            </a>
-          </li>
+          {profile.resumeUrl && (
+            <li>
+              <a href={profile.resumeUrl} className="block px-3 py-2 font-mono text-sm text-accent">
+                resume.pdf
+              </a>
+            </li>
+          )}
         </ul>
       )}
     </header>

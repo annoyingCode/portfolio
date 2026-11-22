@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { site } from "@/data/site";
+import { getAllPosts } from "@/lib/posts";
 import "./globals.css";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans`}>
         <div aria-hidden className="bg-grid pointer-events-none fixed inset-0 -z-10" />
-        <Navbar />
+        <Navbar showBlog={getAllPosts().length > 0} />
         <main>{children}</main>
         <Footer />
       </body>

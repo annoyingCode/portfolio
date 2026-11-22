@@ -14,8 +14,9 @@ export const profile = {
   location: "Islamabad, Pakistan",
   openToWork: true,
   email: "abdulwahab.ai.engr@gmail.com",
-  // Put your resume at /public/resume.pdf, or point this at a hosted file.
-  resumeUrl: "/resume.pdf",
+  // Put your resume at public/resume.pdf, then set this to "/resume.pdf".
+  // Leave it "" to hide the Resume buttons.
+  resumeUrl: "",
   // Optional: put a photo at /public/avatar.jpg and set this to "/avatar.jpg".
   avatar: "" as string,
 };
@@ -33,12 +34,9 @@ export const about = {
     "I'm a software engineer and educator based in Islamabad, Pakistan. I enjoy building practical software, and just as much, helping others understand how it works. Teaching has made me a clearer thinker and a better engineer: if I can't explain something simply, I don't understand it well enough yet.",
     "My long-term goal is to become a scientist. I'm drawn to the questions behind the code, especially in artificial intelligence, and I'm working toward research that expands what's possible, not just what's shippable. This site is where I share what I build, what I teach, and what I'm learning along the way.",
   ],
-  highlights: [
-    { value: "3+", label: "Years in ML" },
-    { value: "12", label: "Models shipped" },
-    { value: "40%", label: "Avg. latency cut" },
-    { value: "5k+", label: "OSS stars" },
-  ],
+  // Up to four stat boxes, e.g. { value: "200+", label: "Students taught" }.
+  // Leave the list empty [] to hide the boxes.
+  highlights: [] as { value: string; label: string }[],
 };
 
 // Projects live in src/data/projects.ts
@@ -82,7 +80,7 @@ export const certifications = [
   "Machine Learning Specialization",
   "Deep Learning Specialization",
   "Natural Language Specialization",
-  "Mathematics for Machine Learnind and Data Science Specialization",
+  "Mathematics for Machine Learning and Data Science Specialization",
 ];
 
 export const skills: { group: string; items: string[] }[] = [
