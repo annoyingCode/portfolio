@@ -6,11 +6,12 @@
 //
 //  status:  "planned"  → grey dot,  "Planned"
 //           "building" → amber dot, "In progress"
+//           "complete" → blue dot,  "Completed" (finished, not deployed)
 //           "live"     → green dot, "Live"
 //  github / demo: paste a link, or leave "" to hide the button.
 // ─────────────────────────────────────────────────────────────
 
-export type ProjectStatus = "planned" | "building" | "live";
+export type ProjectStatus = "planned" | "building" | "complete" | "live";
 
 export type Project = {
   title: string;
@@ -22,6 +23,15 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    title: "Reframe: Self-Esteem Companion",
+    description:
+      "A chat companion for low self-esteem and harsh self-talk. It remembers your wins, goals and struggles, and when your inner critic gets loud it helps you reframe the thought using evidence from your own life. Streaming agent with tool calls, semantic long-term memory, English/Urdu support and a crisis check before any model call.",
+    status: "complete",
+    tags: ["Agentic AI", "LLM", "Long-term Memory", "FastAPI", "Python"],
+    github: "",
+    demo: "",
+  },
   {
     title: "Quantization & Model Explainability",
     description:

@@ -6,6 +6,7 @@ import Reveal from "./Reveal";
 const statusStyle: Record<ProjectStatus, { label: string; dot: string }> = {
   planned: { label: "Planned", dot: "bg-slate-400" },
   building: { label: "In progress", dot: "bg-amber-400" },
+  complete: { label: "Completed", dot: "bg-accent" },
   live: { label: "Live", dot: "bg-emerald-400" },
 };
 
@@ -18,7 +19,7 @@ export default function Projects({ index }: { index: number }) {
           name="projects"
           shape={`(${projects.length},)`}
           title="What I'm building"
-          subtitle="Projects I'm working on right now. Each one goes live here, with its code on GitHub, as it ships."
+          subtitle="What I've built and what I'm working on now. Each one gets its code on GitHub as it ships."
         />
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, i) => {

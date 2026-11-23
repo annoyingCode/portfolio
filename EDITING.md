@@ -112,7 +112,7 @@ others and edit it:
   {
     title: "My New Project",
     description: "One or two sentences about what it does.",
-    status: "building",        // "planned", "building" or "live"
+    status: "building",        // "planned", "building", "complete" or "live"
     tags: ["Python", "AI"],
     github: "https://github.com/annoyingCode/my-new-project",
     demo: "",                  // leave "" to hide the button
