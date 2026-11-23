@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
-import SkillSpace from "@/components/SkillSpace";
+import SkillMatrix from "@/components/SkillMatrix";
 import BlogPreview from "@/components/BlogPreview";
 import Contact from "@/components/Contact";
 import TensorMinimap from "@/components/TensorMinimap";
@@ -29,7 +29,7 @@ export default function Home() {
       <About index={idx("about")} />
       <Projects index={idx("projects")} />
       <Experience index={idx("experience")} />
-      <SkillSpace index={idx("skills")} />
+      <SkillMatrix index={idx("skills")} />
       {hasPosts && <BlogPreview index={idx("blog")} />}
       <Contact index={idx("contact")} />
       <TensorMinimap sections={sections} />
