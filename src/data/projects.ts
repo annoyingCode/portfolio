@@ -25,10 +25,10 @@ export const projects: Project[] = [
   {
     title: "Quantization & Model Explainability",
     description:
-      "Research exploring how quantization changes the Grad-CAM explanations of ResNet, GoogLeNet and MobileNet classifiers on the BloodMNIST medical imaging dataset. Does a smaller, faster model still look at the right things?",
+      "Research on how quantization changes the Grad-CAM explanations of ResNet-18, GoogLeNet and MobileNetV2 classifiers on the BloodMNIST medical imaging dataset. When a model is shrunk to fewer bits, does it still base its decisions on the same evidence?",
     status: "building",
     tags: ["Research", "Computer Vision", "Quantization", "Explainable AI", "Medical Imaging"],
-    github: "",
+    github: "https://github.com/annoyingCode/lowbit-lens",
     demo: "",
   },
   {
