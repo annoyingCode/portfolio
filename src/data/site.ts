@@ -6,12 +6,12 @@
 export const profile = {
   name: "Abdul Wahab Khan",
   initials: "AWK",
-  role: "AI Graduate Student & Educator",
+  role: "Software Engineer & Educator",
   // Titles the hero cycles through with a typing effect (first one shows by default).
   roles: ["Software Engineer", "Educator", "Aspiring Scientist", "Obsessed with Vectors"],
   headline:
-    "MS AI student and Lab Instructor at FAST NUCES, researching computer vision, reinforcement learning and model quantization.",
-  bio: "MS student in Artificial Intelligence and Lab Instructor at FAST NUCES Islamabad, with research interests in computer vision, reinforcement learning and model quantization.",
+    "Software engineer building AI systems, from LLM agents with long-term memory to quantized vision models. Lab Instructor at FAST NUCES.",
+  bio: "Software engineer and Lab Instructor at FAST NUCES Islamabad. I build AI systems: LLM agents with retrieval and long-term memory, and efficient computer vision models.",
   location: "Islamabad, Pakistan",
   openToWork: false,
   email: "abdulwahab.ai.engr@gmail.com",
@@ -25,14 +25,14 @@ export const profile = {
 // Leave a link empty ("") to hide its icon. Fill these in when ready.
 export const socials = {
   github: "https://github.com/annoyingCode",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/iabdulwahabk/",
   x: "",
   huggingface: "",
 };
 
 export const about = {
   paragraphs: [
-    "I'm an MS student in Artificial Intelligence and a Lab Instructor at FAST NUCES Islamabad. My research interests are computer vision, reinforcement learning and model quantization. Most recently I've been exploring how quantizing image classifiers changes what their Grad-CAM explanations show.",
+    "I'm a software engineer and Lab Instructor at FAST NUCES Islamabad, and I build AI systems end to end. Recently that meant Reframe, a streaming LLM agent with long-term memory that replies in English and Urdu, and lowbit-lens, a study of how quantizing image classifiers changes what their Grad-CAM explanations show.",
     "Teaching is the other half of what I do. I've been a Section Leader for Stanford's Code in Place in two cohorts, a Machine Learning Teaching Assistant, and I now run lab sessions and mentor students at FAST. Explaining ideas clearly makes me a better engineer, and my long-term goal is to become a scientist who does both: research and teaching.",
   ],
   // Up to four stat boxes. Leave the list empty [] to hide them.
@@ -90,9 +90,9 @@ export const experience: Job[] = [
 
 export const education = [
   {
-    degree: "MS in Artificial Intelligence",
+    degree: "MS in Artificial Intelligence (coursework)",
     school: "FAST NUCES Islamabad",
-    period: "Aug 2025 — Expected 2027",
+    period: "Aug 2025 — 2026",
     note: "CGPA 3.7 / 4.0",
   },
   {
