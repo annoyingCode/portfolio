@@ -32,7 +32,7 @@ export const socials = {
 
 export const about = {
   paragraphs: [
-    "I'm a software engineer and Lab Instructor at FAST NUCES Islamabad, and I build AI systems end to end. Recently that meant Reframe, a streaming LLM agent with long-term memory that replies in English and Urdu, and lowbit-lens, a study of how quantizing image classifiers changes what their Grad-CAM explanations show.",
+    "I'm a software engineer and Lab Instructor at FAST NUCES Islamabad, and I build AI systems end to end. Recently that meant Reframe, a streaming LLM agent with tool calls and long-term memory, and lowbit-lens, a study of how quantizing image classifiers changes what their Grad-CAM explanations show.",
     "Teaching is the other half of what I do. I've been a Section Leader for Stanford's Code in Place in two cohorts, a Machine Learning Teaching Assistant, and I now run lab sessions and mentor students at FAST. Explaining ideas clearly makes me a better engineer, and my long-term goal is to become a scientist who does both: research and teaching.",
   ],
   // Up to four stat boxes. Leave the list empty [] to hide them.
@@ -90,10 +90,10 @@ export const experience: Job[] = [
 
 export const education = [
   {
-    degree: "MS in Artificial Intelligence (coursework)",
+    degree: "Graduate Coursework in Artificial Intelligence",
     school: "FAST NUCES Islamabad",
     period: "Aug 2025 — 2026",
-    note: "CGPA 3.7 / 4.0",
+    note: "MS program, not completed. Completed: Advanced Machine Learning, Reinforcement Learning, Mathematical Foundations of AI, Research Methodology",
   },
   {
     degree: "BS in Software Engineering",

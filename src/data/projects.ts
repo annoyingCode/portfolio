@@ -26,7 +26,7 @@ export const projects: Project[] = [
   {
     title: "Reframe: Self-Esteem Companion",
     description:
-      "A chat companion for low self-esteem and harsh self-talk. It remembers your wins, goals and struggles, and when your inner critic gets loud it helps you reframe the thought using evidence from your own life. Streaming agent with tool calls, semantic long-term memory, English/Urdu support and a crisis check before any model call.",
+      "A chat companion for low self-esteem and harsh self-talk. It remembers your wins, goals and struggles, and when your inner critic gets loud it helps you reframe the thought using evidence from your own life. Streaming agent with tool calls, semantic long-term memory and a crisis check before any model call.",
     status: "complete",
     tags: ["Agentic AI", "LLM", "Long-term Memory", "FastAPI", "Python"],
     github: "",
